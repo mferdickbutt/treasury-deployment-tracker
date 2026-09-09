@@ -1,0 +1,264 @@
+{
+  "meta": {
+    "entity": "Harbor City Public Treasury",
+    "currency": "USD",
+    "asOf": "2026-08-31",
+    "updated": "2026-09-09",
+    "cashFloor": 12000000,
+    "cashBucketId": "cash",
+    "mixTolerance": 0.05,
+    "targetMix": {
+      "cash": 0.18,
+      "money_market": 0.38,
+      "term_deposits": 0.28,
+      "operating_float": 0.12,
+      "other": 0.04
+    },
+    "notes": "Sample public-finance dataset for the tracker. Cash floor is a $12M policy minimum (about two months of payroll and payables). Target mix is the investment-policy allocation band midpoint; mixTolerance is ±5 percentage points."
+  },
+  "buckets": [
+    {
+      "id": "cash",
+      "label": "Cash",
+      "description": "Demand deposits and overnight balances at the concentration bank."
+    },
+    {
+      "id": "money_market",
+      "label": "Money-market / short-term",
+      "description": "Government money-market funds and T-bills with remaining maturity under 90 days."
+    },
+    {
+      "id": "term_deposits",
+      "label": "Term deposits",
+      "description": "Laddered certificates of deposit and time deposits, 3–12 month maturities."
+    },
+    {
+      "id": "operating_float",
+      "label": "Operating float / payables reserve",
+      "description": "Balances reserved for payroll, vendor payables, and intra-month operating float."
+    },
+    {
+      "id": "other",
+      "label": "Other deployments",
+      "description": "Local-bank CDs, bond-proceeds holding accounts, and residual policy-eligible instruments."
+    }
+  ],
+  "months": [
+    {
+      "month": "2025-03",
+      "label": "Mar 2025",
+      "deployments": {
+        "cash": 10800000,
+        "money_market": 31200000,
+        "term_deposits": 21800000,
+        "operating_float": 10200000,
+        "other": 3100000
+      },
+      "total": 77100000
+    },
+    {
+      "month": "2025-04",
+      "label": "Apr 2025",
+      "deployments": {
+        "cash": 11200000,
+        "money_market": 32800000,
+        "term_deposits": 21500000,
+        "operating_float": 10400000,
+        "other": 3000000
+      },
+      "total": 78900000
+    },
+    {
+      "month": "2025-05",
+      "label": "May 2025",
+      "deployments": {
+        "cash": 14500000,
+        "money_market": 35100000,
+        "term_deposits": 22100000,
+        "operating_float": 11100000,
+        "other": 3400000
+      },
+      "total": 86200000
+    },
+    {
+      "month": "2025-06",
+      "label": "Jun 2025",
+      "deployments": {
+        "cash": 15200000,
+        "money_market": 36500000,
+        "term_deposits": 23800000,
+        "operating_float": 11300000,
+        "other": 3600000
+      },
+      "total": 90400000
+    },
+    {
+      "month": "2025-07",
+      "label": "Jul 2025",
+      "deployments": {
+        "cash": 14800000,
+        "money_market": 37200000,
+        "term_deposits": 25200000,
+        "operating_float": 11500000,
+        "other": 3800000
+      },
+      "total": 92500000
+    },
+    {
+      "month": "2025-08",
+      "label": "Aug 2025",
+      "deployments": {
+        "cash": 14100000,
+        "money_market": 38100000,
+        "term_deposits": 26400000,
+        "operating_float": 11400000,
+        "other": 3900000
+      },
+      "total": 93900000
+    },
+    {
+      "month": "2025-09",
+      "label": "Sep 2025",
+      "deployments": {
+        "cash": 13800000,
+        "money_market": 39400000,
+        "term_deposits": 27100000,
+        "operating_float": 11600000,
+        "other": 4100000
+      },
+      "total": 96000000
+    },
+    {
+      "month": "2025-10",
+      "label": "Oct 2025",
+      "deployments": {
+        "cash": 13200000,
+        "money_market": 40100000,
+        "term_deposits": 26800000,
+        "operating_float": 11800000,
+        "other": 4000000
+      },
+      "total": 95900000
+    },
+    {
+      "month": "2025-11",
+      "label": "Nov 2025",
+      "deployments": {
+        "cash": 12900000,
+        "money_market": 41200000,
+        "term_deposits": 25500000,
+        "operating_float": 11700000,
+        "other": 4200000
+      },
+      "total": 95500000
+    },
+    {
+      "month": "2025-12",
+      "label": "Dec 2025",
+      "deployments": {
+        "cash": 16100000,
+        "money_market": 38800000,
+        "term_deposits": 24900000,
+        "operating_float": 12100000,
+        "other": 4500000
+      },
+      "total": 96400000
+    },
+    {
+      "month": "2026-01",
+      "label": "Jan 2026",
+      "deployments": {
+        "cash": 11500000,
+        "money_market": 37600000,
+        "term_deposits": 26100000,
+        "operating_float": 10800000,
+        "other": 4300000
+      },
+      "total": 90300000
+    },
+    {
+      "month": "2026-02",
+      "label": "Feb 2026",
+      "deployments": {
+        "cash": 12400000,
+        "money_market": 36900000,
+        "term_deposits": 27400000,
+        "operating_float": 10900000,
+        "other": 4100000
+      },
+      "total": 91700000
+    },
+    {
+      "month": "2026-03",
+      "label": "Mar 2026",
+      "deployments": {
+        "cash": 11800000,
+        "money_market": 35800000,
+        "term_deposits": 28600000,
+        "operating_float": 11200000,
+        "other": 3900000
+      },
+      "total": 91300000
+    },
+    {
+      "month": "2026-04",
+      "label": "Apr 2026",
+      "deployments": {
+        "cash": 13600000,
+        "money_market": 36200000,
+        "term_deposits": 29100000,
+        "operating_float": 11400000,
+        "other": 4000000
+      },
+      "total": 94300000
+    },
+    {
+      "month": "2026-05",
+      "label": "May 2026",
+      "deployments": {
+        "cash": 15400000,
+        "money_market": 37100000,
+        "term_deposits": 29800000,
+        "operating_float": 11600000,
+        "other": 4300000
+      },
+      "total": 98200000
+    },
+    {
+      "month": "2026-06",
+      "label": "Jun 2026",
+      "deployments": {
+        "cash": 14900000,
+        "money_market": 38500000,
+        "term_deposits": 30500000,
+        "operating_float": 11800000,
+        "other": 4400000
+      },
+      "total": 100100000
+    },
+    {
+      "month": "2026-07",
+      "label": "Jul 2026",
+      "deployments": {
+        "cash": 14700000,
+        "money_market": 39200000,
+        "term_deposits": 31200000,
+        "operating_float": 11900000,
+        "other": 4600000
+      },
+      "total": 101600000
+    },
+    {
+      "month": "2026-08",
+      "label": "Aug 2026",
+      "deployments": {
+        "cash": 15100000,
+        "money_market": 40100000,
+        "term_deposits": 30800000,
+        "operating_float": 12100000,
+        "other": 4800000
+      },
+      "total": 102900000
+    }
+  ]
+}
