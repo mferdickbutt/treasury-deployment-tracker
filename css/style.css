@@ -1,0 +1,219 @@
+:root {
+  --ink: #142033;
+  --muted: #5b6578;
+  --paper: #f7f4ee;
+  --card: #fffdf8;
+  --line: #d9d2c5;
+  --accent: #1f5c4d;
+  --accent-soft: #e4f0eb;
+  --warn: #8a3b1d;
+  --warn-soft: #f6e6dc;
+  --ok: #1f5c4d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: var(--ink);
+  background: var(--paper);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  line-height: 1.45;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+header.hero {
+  border-bottom: 3px solid var(--ink);
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+header.hero p.kicker {
+  margin: 0 0 0.35rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0 0 0.4rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.lede {
+  margin: 0;
+  max-width: 46rem;
+  color: var(--muted);
+}
+
+.meta-line {
+  margin-top: 0.75rem;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+  margin: 1.25rem 0 1.75rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 0.85rem 0.95rem;
+}
+
+.card .label {
+  display: block;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.card .value {
+  display: block;
+  font-size: 1.25rem;
+  font-variant-numeric: tabular-nums;
+  margin-top: 0.25rem;
+}
+
+.card .hint {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+
+section {
+  margin: 2rem 0;
+}
+
+h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.25rem;
+}
+
+.section-note {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 0.88rem;
+  font-variant-numeric: tabular-nums;
+}
+
+caption {
+  text-align: left;
+  font-weight: 700;
+  padding: 0.65rem 0.75rem;
+  caption-side: top;
+  font-family: Georgia, serif;
+}
+
+th,
+td {
+  padding: 0.45rem 0.7rem;
+  border-bottom: 1px solid var(--line);
+  text-align: right;
+  white-space: nowrap;
+}
+
+th:first-child,
+td:first-child {
+  text-align: left;
+}
+
+thead th {
+  background: var(--accent-soft);
+  font-weight: 650;
+}
+
+tbody tr:nth-child(even) {
+  background: #fbf8f2;
+}
+
+tr.below-floor td:first-child {
+  box-shadow: inset 3px 0 0 var(--warn);
+}
+
+.flag-below {
+  color: var(--warn);
+  font-weight: 650;
+}
+
+.flag-ok {
+  color: var(--ok);
+}
+
+.flag-off {
+  color: var(--warn);
+}
+
+footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.buckets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin: 0.75rem 0 0;
+}
+
+.bucket {
+  border: 1px solid var(--line);
+  background: var(--card);
+  padding: 0.75rem;
+}
+
+.bucket h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1rem;
+}
+
+.bucket p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.55rem;
+  }
+}
